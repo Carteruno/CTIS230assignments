@@ -1,11 +1,36 @@
 
 body {
     color:purple;
+    font-size: 1.0em;
+    font-family: monospace,sans-serif;
 }
 
 h2 {
     color:palevioletred;
+    width: fit-content;
 }
+
 h1 {
-    color:cornflowerblue
+    color:cornflowerblue;
+    background-color: rgb(223, 192, 238);
+    width: fit-content;
+}
+
+h3 {
+    color:palevioletred;
+    width: fit-content;
+}
+
+h4 {
+    color:palevioletred;
+    width: fit-content;
+}
+strong {
+    background-color: rgb(223, 192, 238);
+    font-weight: bold;
+    font-style: italic;
+}
+
+a:visited {
+    color:blueviolet
 }
