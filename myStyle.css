@@ -3,29 +3,33 @@ body {
     color:purple;
     font-size: 1.0em;
     font-family: monospace,sans-serif;
-}
-
-h2 {
-    color:palevioletred;
-    width: fit-content;
+    max-width: 50.0em;
+    margin:auto
 }
 
 h1 {
-    color:cornflowerblue;
-    background-color: rgb(223, 192, 238);
+    color: cornflowerblue;
+    background-color: rgb(234, 185, 230);
     width: fit-content;
 }
 
-h3 {
+h2, h3, h4, h5, h6 {
     color:palevioletred;
     width: fit-content;
+    margin-bottom: 2.0;
 }
 
-h4 {
-    color:palevioletred;
-    width: fit-content;
+p.conclusion {
+    font-style: bold;
+    color: rgb(84, 82, 211);
 }
-strong {
+
+p.intro {
+    font-style: bold;
+    color: rgb(202, 25, 205);
+}
+
+p strong {
     background-color: rgb(223, 192, 238);
     font-weight: bold;
     font-style: italic;
@@ -37,4 +41,12 @@ a:link {
 
 a:visited {
     color:blueviolet
+}
+
+img#imgPirate {
+    width: 20%;
+}
+
+div.pad{
+padding: bottom  25px;
 }
