@@ -5,6 +5,7 @@ body {
     font-family: monospace,sans-serif;
     max-width: 50.0em;
     margin:auto
+    
 }
 
 h1 {
@@ -43,11 +44,22 @@ a:visited {
     color:blueviolet
 }
 
-img#imgPirate {
+img#imgFormat {
     width: 20%;
-
+    height: -20%;
+    float: left;
+    
 }
 
-div.pad{
-padding: bottom  25px;
+div.header{
+    display: flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: space-evenly;
+    background-color: rgb(223, 192, 238);
+}
+
+div.footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgb(223, 192, 238);
 }
