@@ -1,0 +1,41 @@
+@font-face {
+  font-family: munro; /* The name you'll use to apply this font */
+  src: url('fonts/munro.ttf') format('truetype'); /* Path to the .ttf file */
+}
+
+body {
+  font-family: 'munro';
+  }
+  
+  .content-width {
+    max-width: 70ch;
+    width: calc(100% - 4rem);
+    margin: 0 auto;
+  }
+  
+  main {
+    margin-bottom: 4rem;
+  }
+  
+  header {
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+    background-color: hsl(280, 50%, 40%);
+    border-bottom: 4px solid hsl(300, 50%, 50%);
+    color: hsl(300, 50%, 90%);
+  }
+  
+  header p {
+    color: hsl(300, 50%, 85%);
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    line-height: 1.25;
+    font-family: 'munro';
+  }
+  
+  h2, h3 {
+    color: hsl(280, 50%, 40%)
+  }
+ 
