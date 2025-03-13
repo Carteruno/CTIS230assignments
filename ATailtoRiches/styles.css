@@ -5,12 +5,13 @@
 
 body {
   font-family: 'munro';
-  }
-  
-  .content-width {
-    max-width: 70ch;
-    width: calc(100% - 4rem);
-    margin: 0 auto;
+  color: white ;
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+  background-color: black;
+  margin-right: auto;
+  margin-right: auto;
   }
   
   main {
@@ -18,15 +19,7 @@ body {
   }
   
   header {
-    margin-bottom: 4rem;
-    padding: 2rem 0;
-    background-color: hsl(280, 50%, 40%);
-    border-bottom: 4px solid hsl(300, 50%, 50%);
-    color: hsl(300, 50%, 90%);
-  }
-  
-  header p {
-    color: hsl(300, 50%, 85%);
+   
   }
   
   h1, h2, h3 {
@@ -36,6 +29,6 @@ body {
   }
   
   h2, h3 {
-    color: hsl(280, 50%, 40%)
+    color: white
   }
  
