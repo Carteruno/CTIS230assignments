@@ -5,7 +5,7 @@
     thebutton = document.getElementById("thebutton");
     thesecondbutton = document.getElementById("thesecondbutton")
     otheritem = document.getElementById("buttontest");
-    secondotheritem = document.getElementById("secondbuttontest")
+    secondotheritem = document.getElementById("secondbuttontest");
     //an event listener adds an event handler, in this case the event handler
     //is being added to the myitem element by the .addEventListener Method.
     //"click" is the name given to event and "Onclick" is the Method. 
@@ -27,11 +27,17 @@
         myitem.style.fontSize = "";
     }
 
-    function onButtonClick1() {
+    function onButtonClick() {
         otheritem.style.color ="red";
-    }
-    
-    function onButtonClick2() {
         secondotheritem.style.color ="blue";
     }
+    
+    textentry = document.getElementById("myinput");  
+textentry.addEventListener("change", onChange);
+
+function onChange() {  
+    newtext = myinput.value;  
+    otheritem.innerHTML = newtext;  
+}
+
 }
