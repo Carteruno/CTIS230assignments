@@ -12,7 +12,7 @@
     myitem.addEventListener("click", onClick);
     myitem.addEventListener("mouse off", onmouseout);
     thebutton.addEventListener("click", onButtonClick1);
-    thesecondbutton.addEventListener("click two",onButtonClick2);
+    thesecondbutton.addEventListener("click",onButtonClick2);
     //This code states when the onclick function/Method is invoked, the element returned to
     //myitem tagged with "firsttest" id will invoke an event. This event will execute myitem.style.color = "green"
     //The event of the OnClick function will turn the given element's text green.
@@ -27,15 +27,18 @@
         myitem.style.fontSize = "";
     }
 
-    function onButtonClick() {
+    function onButtonClick1() {
         otheritem.style.color ="red";
+    }
+
+    function onButtonClick2() {
         secondotheritem.style.color ="blue";
     }
 
     textentry = document.getElementById("myinput");  
-textentry.addEventListener("change", onChange);
-function onChange() {  
-    newtext = myinput.value;  
-    otheritem.innerHTML = newtext;  
-}
+    textentry.addEventListener("change", onChange);
+    function onChange() {  
+        newtext = myinput.value;  
+        otheritem.innerHTML = newtext;  
+    }
 }
