@@ -37,8 +37,10 @@
 
     textentry = document.getElementById("myinput");  
     textentry.addEventListener("change", onChange);
+    modifiedtext = document.getElementById("modifiedtext");
+    
     function onChange() {  
         newtext = myinput.value;  
-        otheritem.innerHTML = newtext;  
+        modifiedtext.innerHTML = newtext;  
     }
 }
