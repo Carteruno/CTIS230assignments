@@ -1,6 +1,7 @@
 //myitem is defined by the document element and the getElementById method.
 //Any element with the id "firsttest" will return the given element.
 {
+    myimageitem = document.getElementById("image-expansion")
     myitem = document.getElementById("firsttest");
     thebutton = document.getElementById("thebutton");
     thesecondbutton = document.getElementById("thesecondbutton")
@@ -12,6 +13,7 @@
     //is being added to the myitem element by the .addEventListener Method.
     //"click" is the name given to event and "Onclick" is the Method. 
     myitem.addEventListener("click", onClick);
+    myimageitem.addEventListener("click", onClickImage);
     myitem.addEventListener("mouse off", onmouseout);
     thebutton.addEventListener("click", onButtonClick1);
     thesecondbutton.addEventListener("click",onButtonClick2);
@@ -24,6 +26,23 @@
         myitem.style.color = "green";
         myitem.style.fontSize = "25px";
     }
+
+    var ifclick = false;
+
+    function onClickImage() {
+        if(ifclick == false) {
+            ifclick = true;
+            myimageitem.style.width = "220px";
+            myimageitem.style.height = "220px";
+        }
+        else {
+            ifclick = false;
+            myimageitem.style.width = "110px";
+            myimageitem.style.height = "110px";
+        }
+    }
+
+    
 
     function onmouseout() {
         myitem.style.color = "";
